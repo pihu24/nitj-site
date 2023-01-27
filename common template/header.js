@@ -1,3 +1,5 @@
+// import { executor } from '../js/navbar-mobile.js'
+import { getNavbar } from '../js/navbar.js'
 const bodyEl = document.body
 
 fetch('/common template/navbar.html')
@@ -6,6 +8,8 @@ fetch('/common template/navbar.html')
     const navEl = document.createElement('header')
     navEl.innerHTML = html
     bodyEl.prepend(navEl)
+    getNavbar()
+
     carousel()
   })
 
@@ -23,3 +27,7 @@ function carousel() {
   x[slideIndex - 1].style.display = 'block'
   setTimeout(carousel, 2500)
 }
+
+// getNavbar()
+
+// executor()
