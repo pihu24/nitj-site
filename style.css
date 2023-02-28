@@ -3832,6 +3832,10 @@ sup {
   transition-duration: 75ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -4072,6 +4076,30 @@ sup {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[length\:1200px_500px\]:hover {
+  background-size: 1200px 500px;
+}
+
+.hover\:bg-\[length\:120\%_500px\]:hover {
+  background-size: 120% 500px;
+}
+
+.hover\:bg-\[length\:120\%_auto\]:hover {
+  background-size: 120% auto;
+}
+
+.hover\:bg-\[length\:120\%_100\%\]:hover {
+  background-size: 120% 100%;
+}
+
+.hover\:bg-\[length\:120\%_1200px\]:hover {
+  background-size: 120% 1200px;
+}
+
+.hover\:bg-\[length\:120\%_100px\]:hover {
+  background-size: 120% 100px;
+}
+
 .hover\:p-2:hover {
   padding: 0.5rem;
 }
@@ -4299,6 +4327,19 @@ sup {
 
 .group:hover .group-hover\:animate-shake {
   animation: shake 300ms ease-in-out;
+}
+
+.group:hover .group-hover\:bg-dark-purple\/90 {
+  background-color: hsl(242 83% 7% / 0.9);
+}
+
+.group:hover .group-hover\:bg-dark-purple {
+  --tw-bg-opacity: 1;
+  background-color: hsl(242 83% 7% / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-dark-purple\/40 {
+  background-color: hsl(242 83% 7% / 0.4);
 }
 
 .group:hover .group-hover\:bg-opacity-0 {
